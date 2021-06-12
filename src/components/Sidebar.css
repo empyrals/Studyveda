@@ -1,0 +1,74 @@
+.headd {
+  background-color: #f5f5f5;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  color: #060b26;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 5px;
+  text-shadow: 2px 2px 3px #333;
+  position: absolute;
+  top: 20px;
+  /* left: 10px; */
+  /* padding: 0.5rem 2rem; */
+  margin: 0 1rem;
+}
+.headd > h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.side-menu {
+  background-color: #060b26;
+  width: 300px;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  border-radius: 18px;
+}
+
+.side-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0 8px 16px;
+  height: 80px;
+}
+
+.side-text a {
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 5px;
+}
+
+.side-text a:hover {
+  background-color: #1a83ff;
+}
+
+.sidebar-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span {
+  margin-left: 18px;
+  font-size: 1.5rem;
+}
+.icon {
+  font-size: 1.8rem;
+}
+.logo {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+  /* margin-bottom: -3rem; */
+  /* text-shadow: 2px 2px 3px #333; */
+}

@@ -1,0 +1,25 @@
+.dashboard,
+/* .library, */
+/* .course, */
+.help,
+.department {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  font-size: 3rem;
+}
+body {
+  /* background-color: #4892e6; */
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 2rem 1rem;
+}
+.page {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: #f3f3f3;
+  height: 87vh;
+  overflow: scroll;
+}
