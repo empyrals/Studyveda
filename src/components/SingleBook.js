@@ -19,7 +19,7 @@ const SingleBook = () => {
     setAuthor(newItem.author);
     setSummary(newItem.summary);
     setDownload(newItem.download_url);
-  });
+  }, []);
   return (
     <Container className="main-container">
       <DisplayBook className="display-book">

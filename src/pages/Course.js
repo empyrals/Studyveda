@@ -2,6 +2,7 @@ import React from "react";
 import { CourseData } from "../components/CourseData";
 import CourseCard from "../CourseCard";
 import styled from "styled-components";
+import SingleCourse from "../components/SingleCourse";
 
 const Course = () => {
   console.log("Hello");
@@ -13,14 +14,12 @@ const Course = () => {
         {/* <div className="inner-course"> */}
         {CourseData.map((item, index) => {
           return (
-            <CourseCard
+            <SingleCourse
               key={index}
-              day={item.day}
-              time={item.time}
               icon={item.icon}
               title={item.title}
               mentor={item.mentor}
-              venue={item.venue}
+              tech={item.tech}
             />
           );
         })}

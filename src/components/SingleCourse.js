@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { IoPersonOutline } from "react-icons/io5";
 import { GoLocation } from "react-icons/go";
 
-const CourseCard = ({ icon, title, mentor, tech }) => {
+const SingleCourse = ({ icon, title, mentor, tech }) => {
   console.log(tech);
   return (
     <Main>
@@ -31,7 +31,7 @@ const CourseCard = ({ icon, title, mentor, tech }) => {
             <p>{tech}</p>
           </div>
         </Info>
-        <Progress className="progress">
+        {/* <Progress className="progress">
           <div className="progress_count">
             <h4>Progress</h4>
             <p>30%</p>
@@ -39,13 +39,16 @@ const CourseCard = ({ icon, title, mentor, tech }) => {
           <div className="outer">
             <div className="inner"></div>
           </div>
-        </Progress>
+        </Progress> */}
+        <Enroll>
+          <button className="enroll">Enroll now</button>
+        </Enroll>
       </div>
     </Main>
   );
 };
 
-export default CourseCard;
+export default SingleCourse;
 
 const Main = styled.div`
   text-align: left;
@@ -75,12 +78,7 @@ const Head = styled.div`
   justify-content: space-between;
   padding: 0.1rem 1rem;
 `;
-const Time = styled.div`
-  background-color: aliceblue;
-  color: #222;
-  padding: 0.2rem 0.8rem;
-  border-radius: 8px;
-`;
+
 const Info = styled.div`
   margin-top: 1.5rem;
   h3 {
@@ -104,26 +102,26 @@ const Info = styled.div`
     margin-right: 0.5rem;
   }
 `;
-const Progress = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  justify-content: space-between;
-  height: 3.5rem;
-  .outer {
-    width: 100%;
-    height: 1.2rem;
-    background-color: black;
+const Enroll = styled.div`
+  display: grid;
+  place-items: center;
+  .enroll {
+    padding: 0.8rem 4rem;
+    font-size: 1.2rem;
+    border: none;
     border-radius: 10px;
+    /* background-color: #1a83ee; */
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    background-color: #060b26;
+    box-shadow: 2px 2px 4px #f3f3f3;
   }
-  .inner {
-    width: 30%;
-    background-color: aqua;
-    height: 1.2rem;
-    border-radius: 10px;
-  }
-  .progress_count {
-    display: flex;
-    justify-content: space-between;
+  .enroll:hover {
+    transform: scale(1.08);
+    /* background-color: #060b26;
+    box-shadow: 2px 2px 4px #f3f3f3; */
+    background-color: #1a83ee;
+    box-shadow: 4px 4px 3px #888;
   }
 `;

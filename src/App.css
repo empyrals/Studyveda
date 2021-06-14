@@ -21,5 +21,6 @@ body {
   border-radius: 15px;
   background-color: #f3f3f3;
   height: 87vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
 }

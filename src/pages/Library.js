@@ -32,6 +32,9 @@ const Books = styled.main`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   padding: 2rem 1rem 1rem 2rem;
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const BookCover = styled.div`

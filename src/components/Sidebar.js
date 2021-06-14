@@ -15,14 +15,14 @@ const Sidebar = () => {
             <ul className="sidebar-items">
               <div className="headd">
                 <AiIcons.AiOutlineGitlab className="logo" />
-                <h2>StudyVeda</h2>
+                <h2 className="logo-text">StudyVeda</h2>
               </div>
               {SidebarData.map((item, index) => {
                 return (
                   <li key={index} className={item.cName}>
                     <Link to={item.path}>
                       {item.icon}
-                      <span>{item.title}</span>
+                      <span className="logo-text">{item.title}</span>
                     </Link>
                   </li>
                 );

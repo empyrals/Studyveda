@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
-import { FcAndroidOs } from "react-icons/fc";
+// import { FcAndroidOs } from "react-icons/fc";
+import * as FcIcons from "react-icons/fc";
+
 import CourseCard from "../CourseCard";
 import img from "../user.jpg";
 
@@ -26,28 +28,23 @@ const Dashboard = () => {
         {/* <CourseCard icon=<FcAndroidOs /> day="Mon" time="8:20 a.m" /> */}
         <CardContainer className="card_container">
           <CourseCard
-            day="Monday"
-            time="8:30 a.m"
-            icon={<FcAndroidOs />}
-            title="Operating Systems"
+            icon={<FcIcons.FcAndroidOs />}
+            title="Intro to Bug Bounty"
             mentor="Galvin Biden"
-            venue="Room no.301"
+            tech="Hacking"
           />
           <CourseCard
-            day="Monday"
-            time="8:30 a.m"
-            icon={<FcAndroidOs />}
-            title="Operating Systems"
+            icon={<FcIcons.FcAndroidOs />}
+            title="C, The Legacy"
             mentor="Galvin Biden"
-            venue="Room no.301"
+            tech="C Programming"
           />
+
           <CourseCard
-            day="Monday"
-            time="8:30 a.m"
-            icon={<FcAndroidOs />}
-            title="Operating Systems"
+            icon={<FcIcons.FcAndroidOs />}
+            title="A.I in 2040"
             mentor="Galvin Biden"
-            venue="Room no.301"
+            tech="A.I, ML"
           />
         </CardContainer>
         {/* <Course_card /> */}

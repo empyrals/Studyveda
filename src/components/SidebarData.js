@@ -3,6 +3,8 @@ import * as AiIcons from "react-icons/ai";
 import * as MdIcons from "react-icons/md";
 import * as IoIcons from "react-icons/io5";
 import * as GiIcons from "react-icons/gi";
+import * as FiIcons from "react-icons/fi";
+import * as HiIcons from "react-icons/hi";
 
 export const SidebarData = [
   {
@@ -23,16 +25,22 @@ export const SidebarData = [
     icon: <IoIcons.IoLibrarySharp />,
     cName: "side-text",
   },
+  // {
+  //   title: "Department",
+  //   path: "/department",
+  //   icon: <GiIcons.GiGraduateCap />,
+  //   cName: "side-text",
+  // },
+  // {
+  //   title: "Help",
+  //   path: "/help",
+  //   icon: <IoIcons.IoHelpCircleSharp />,
+  //   cName: "side-text",
+  // },
   {
-    title: "Department",
-    path: "/department",
-    icon: <GiIcons.GiGraduateCap />,
-    cName: "side-text",
-  },
-  {
-    title: "Help",
+    title: "SHOP",
     path: "/help",
-    icon: <IoIcons.IoHelpCircleSharp />,
+    icon: <FiIcons.FiShoppingCart />,
     cName: "side-text",
   },
 ];
